@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tennis-results-dashboard"
+version = "0.1.0"
+description = "A starter Tennis Results Dashboard project with linting, formatting, and a CLI entrypoint."
+authors = [{ name = "Tennis Dashboard Devs" }]
+readme = "ReadMe.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "black>=24.0",
+    "ruff>=0.1.9",
+    "pytest>=7.4",
+]
+
+[project.scripts]
+tennis-results-dashboard = "tennis_results_dashboard.cli:main"
+
+[tool.black]
+line-length = 100
+target-version = ["py310"]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+ignore = []
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+
