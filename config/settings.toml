@@ -1,0 +1,4 @@
+# Global configuration for the Tennis Results Dashboard
+[app]
+name = "Tennis Results Dashboard"
+welcome_message = "Hello from the Tennis Results Dashboard!"
