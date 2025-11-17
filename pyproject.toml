@@ -9,7 +9,7 @@ description = "A starter Tennis Results Dashboard project with linting, formatti
 authors = [{ name = "Tennis Dashboard Devs" }]
 readme = "ReadMe.md"
 requires-python = ">=3.10"
-dependencies = []
+dependencies = ["python-dotenv>=1.0"]
 
 [project.optional-dependencies]
 dev = [
