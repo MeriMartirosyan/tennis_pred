@@ -13,6 +13,15 @@ This project provides the scaffolding for a Tennis Results Dashboard, including:
 pip install -e .[dev]
 ```
 
+Create and activate a virtual environment (recommended) and run the test suite:
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -e .[dev]
+pytest
+```
+
 Run the hello-world CLI:
 
 ```bash
